@@ -1,0 +1,69 @@
+body {
+  background-color: white;
+}
+
+.SlidingPuzzleFigure {
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-style: italic;
+  width: 11.8rem;
+  margin: 1.5rem;
+  padding: .5rem .1rem .5em .5rem;
+}
+
+.SlidingPuzzle, .Tile {
+  padding: 0;
+  margin: 0;
+}
+
+.SlidingPuzzle {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  line-height: 3rem;;
+  width: 11.4rem;
+  background-color: black;
+  border: solid .6rem;
+}
+
+@keyframes blink {
+  50% {
+    border-color: gold;
+  }
+}
+
+.SlidingPuzzle.wow {
+  animation: blink .5s step-end infinite alternate;
+}
+
+.Tile {
+  list-style-type: none;
+  float: left;
+  width: 3rem;
+  height: 3rem;
+  background-color: snow;
+  border-top: solid .4rem lightgray;
+  border-right: solid .4rem gray;
+  border-bottom: solid .4rem gray;
+  border-left: solid .4rem lightgray;
+}
+
+.Tile:not(.Tile9):hover {
+  cursor: pointer;
+}
+
+.Tile:not(.Tile9):active {
+  position: relative;
+  top: .02rem;
+  right: .02rem;
+}
+
+.Tile.hit {
+  background-color: lightgreen;
+}
+
+.Tile.Tile9 {
+  visibility: hidden;
+}
