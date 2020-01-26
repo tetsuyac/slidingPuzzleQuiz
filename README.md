@@ -2,8 +2,10 @@
 
 #### Sep/19/2019 Tetsuya Chiba
 
+[DEMO](https://tetsuyac.github.io/slidingPuzzleQuiz/)
 ```
-cd slidingPuzzleQuiz  # if the folder is created.
+$ git clone https://github.com/tetsuyac/slidingPuzzleQuiz.git
+$ cd slidingPuzzleQuiz
 $ nvm use v11
 $ npm i
 $ npm run test
